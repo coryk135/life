@@ -117,23 +117,85 @@ var main = function(){
 }
 
 //ctx.fillRect(15,15,20,20);
-mainCells[0][0].alive = true;
-mainCells[0][1].alive = true;
-mainCells[1][0].alive = true;
-mainCells[1][1].alive = true;
 
-mainCells[2][2].alive = true;
-mainCells[2][3].alive = true;
-mainCells[3][2].alive = true;
-mainCells[3][3].alive = true;
+//R-pentomino
+/*
+mainCells[51][50].alive = true;
+mainCells[50][51].alive = true;
+mainCells[50][52].alive = true;
+mainCells[51][51].alive = true;
+mainCells[52][51].alive = true;
+*/
+
+//Diehard
+/*
+mainCells[50][56].alive = true;
+mainCells[51][50].alive = true;
+mainCells[51][51].alive = true;
+mainCells[52][51].alive = true;
+mainCells[52][55].alive = true;
+mainCells[52][56].alive = true;
+mainCells[52][57].alive = true;
+*/
+
+//acorn
+/*
+mainCells[50][51].alive = true;
+mainCells[51][53].alive = true;
+mainCells[52][50].alive = true;
+mainCells[52][51].alive = true;
+mainCells[52][54].alive = true;
+mainCells[52][55].alive = true;
+mainCells[52][56].alive = true;
+*/
+
+//Gosper gun
+//uhh x and y are backwards
+var sx = 0;
+var sy = 0;
+mainCells[sx+4][sy].alive = true;
+mainCells[sx+5][sy].alive = true;
+mainCells[sx+4][sy+1].alive = true;
+mainCells[sx+5][sy+1].alive = true;
+
+mainCells[sx+4][sy+10].alive = true;
+mainCells[sx+5][sy+10].alive = true;
+mainCells[sx+6][sy+10].alive = true;
+mainCells[sx+3][sy+11].alive = true;
+mainCells[sx+7][sy+11].alive = true;
+mainCells[sx+2][sy+12].alive = true;
+mainCells[sx+8][sy+12].alive = true;
+mainCells[sx+2][sy+13].alive = true;
+mainCells[sx+8][sy+13].alive = true;
+
+mainCells[sx+5][sy+14].alive = true;
+mainCells[sx+3][sy+15].alive = true;
+mainCells[sx+7][sy+15].alive = true;
+mainCells[sx+4][sy+16].alive = true;
+mainCells[sx+5][sy+16].alive = true;
+mainCells[sx+6][sy+16].alive = true;
+mainCells[sx+5][sy+17].alive = true;
+
+mainCells[sx+2][sy+20].alive = true;
+mainCells[sx+3][sy+20].alive = true;
+mainCells[sx+4][sy+20].alive = true;
+mainCells[sx+2][sy+21].alive = true;
+mainCells[sx+3][sy+21].alive = true;
+mainCells[sx+4][sy+21].alive = true;
+
+mainCells[sx+1][sy+22].alive = true;
+mainCells[sx+5][sy+22].alive = true;
+
+mainCells[sx+0][sy+24].alive = true;
+mainCells[sx+1][sy+24].alive = true;
+mainCells[sx+5][sy+24].alive = true;
+mainCells[sx+6][sy+24].alive = true;
+
+mainCells[sx+2][sy+34].alive = true;
+mainCells[sx+3][sy+34].alive = true;
+mainCells[sx+2][sy+35].alive = true;
+mainCells[sx+3][sy+35].alive = true;
 
 
-mainCells[10][10].alive = true;
-mainCells[11][10].alive = true;
-mainCells[10][11].alive = true;
-mainCells[11][11].alive = true;
-
-
-
-var id = setInterval(main, 500);
+var id = setInterval(main, 50);
 console.log(id);
